@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { FormGroup, FormControl, InputGroup, Glyphicon} from 'react-bootstrap';
+import Article from './Article';
 
 class App extends Component {
   constructor(props){
@@ -50,12 +51,9 @@ class App extends Component {
             </InputGroup>
 
           </FormGroup>
-          <div className="Profile">
-            <div>Author</div>
-          </div>
-          <div className="Gallery">
-            Gallery
-          </div>
+          <Article
+            article={this.state.article}
+          />
       </div>
     )
   }
