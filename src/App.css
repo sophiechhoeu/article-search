@@ -11,3 +11,8 @@ body {
 .App-title {
   font-size: 26px;
 }
+
+.logo {
+  width: 150px;
+  height: 150px;
+}

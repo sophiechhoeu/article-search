@@ -31,7 +31,8 @@ class App extends Component {
   render(){
     return(
       <div className="App">
-        <div className="App-title">Article Search</div>
+        <div className="App-title">New York Times Article Search</div>
+        <img className="logo" src="http://www.eatdimestore.com/wp-content/uploads/2017/05/new-york-times-logo.jpg"></img>
           <FormGroup>
             <InputGroup>
               <FormControl
