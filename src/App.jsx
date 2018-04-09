@@ -32,7 +32,7 @@ class App extends Component {
     return(
       <div className="App">
         <div className="App-title">New York Times Article Search</div>
-        <img className="logo" src="http://www.eatdimestore.com/wp-content/uploads/2017/05/new-york-times-logo.jpg"></img>
+        <img alt="logo" className="logo" src="http://www.eatdimestore.com/wp-content/uploads/2017/05/new-york-times-logo.jpg"></img>
           <FormGroup>
             <InputGroup>
               <FormControl
