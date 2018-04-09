@@ -11,7 +11,10 @@ class App extends Component {
   }
 
   search() {
-    console.log('this.state', this.state);
+    const BASE_URL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?';
+    const API_KEY = 'e65c285a3650428aa955f98e68c8f641'
+    const FETCH_URL = BASE_URL + 'q=' + this.state.query + '&api-key='+ API_KEY
+    console.log('FETCH_URL', FETCH_URL);
   }
 
   render(){
