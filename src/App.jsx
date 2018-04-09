@@ -15,6 +15,11 @@ class App extends Component {
     const API_KEY = 'e65c285a3650428aa955f98e68c8f641'
     const FETCH_URL = `${BASE_URL}q=${this.state.query}&api-key=${API_KEY}`
     console.log('FETCH_URL', FETCH_URL);
+    fetch(FETCH_URL,{
+      method: 'GET'
+      })
+      .then(response => response.json())
+      .then(json => console.log('json', json));
   }
 
   render(){
