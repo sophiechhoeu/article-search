@@ -6,7 +6,8 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      query:''
+      query:'',
+      article: null
     }
   }
 
@@ -19,7 +20,11 @@ class App extends Component {
       method: 'GET'
       })
       .then(response => response.json())
-      .then(json => console.log('json', json));
+      .then(json => {
+        const article = json.response.docs[0]
+        console.log('article', article);
+        this.setState({article});
+      });
   }
 
   render(){
