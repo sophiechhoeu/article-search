@@ -53,11 +53,11 @@ class App extends Component {
             </InputGroup>
 
           </FormGroup>
-        <div class="container">
+
           <Article
             article={this.state.article}
           />
-          </div>
+
       </div>
     )
   }
