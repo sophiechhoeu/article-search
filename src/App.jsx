@@ -14,7 +14,7 @@ class App extends Component {
 
   search() {
     const BASE_URL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?';
-    const API_KEY = process.env.REACT_APP_SEARCH_API_KEY
+    const API_KEY = process.env.NODE_ENV === 'production' ? process.env.REACT_APP_REACT_APP_PROD_SEARCH_API_KEY : process.env.REACT_APP_SEARCH_API_KEY;
     const FETCH_URL = `${BASE_URL}q=${this.state.query}&api-key=${API_KEY}`
     console.log('FETCH_URL', FETCH_URL);
     fetch(FETCH_URL,{
