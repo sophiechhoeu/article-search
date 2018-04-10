@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { FormGroup, FormControl, InputGroup, Glyphicon} from 'react-bootstrap';
 import Article from './Article';
+require('dotenv').config()
 
 class App extends Component {
   constructor(props){
