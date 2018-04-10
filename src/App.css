@@ -16,3 +16,12 @@ body {
   width: 150px;
   height: 150px;
 }
+
+.article-link {
+  text-align: center;
+
+}
+
+a, a:hover{
+  color: white;
+}

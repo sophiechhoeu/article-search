@@ -10,8 +10,9 @@ class Article extends Component {
       article = this.props.article;
     }
     return (
+
       <div>
-        <div>{article.web_url}</div>
+        <div className="article-link"><a href={article.web_url} target="_blank">{article.web_url}</a></div>
         <div>{article.snippet}</div>
         <div>{article.source}</div>
       </div>
