@@ -30,3 +30,7 @@ a {
 a:hover {
   color:white;
 }
+
+a:visited {
+  color:white;
+}
